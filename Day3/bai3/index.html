@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="../bai3/style.css" />
+  </head>
+  <body>
+    <h3>#Form login</h3>
+    <div class="form-box">
+      <form>
+        <table>
+          <tr>
+            <td>Username:</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td>City of employment:</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Web server:</td>
+            <td>
+              <select>
+                <option>— Choose a server —</option>
+                <option>Google</option>
+                <option>Youtube</option>
+                <option>Facebook</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Please specify your role:</td>
+            <td>
+              <input type="radio" name="role" />Admin <br />
+              <input type="radio" name="role" />Engineer <br />
+              <input type="radio" name="role" />Manager <br />
+              <input type="radio" name="role" />Guest
+            </td>
+          </tr>
+          <tr>
+            <td>Single Sing-on to the following:</td>
+            <td>
+              <input type="checkbox" />Mail <br />
+              <input type="checkbox" />Payroll <br />
+              <input type="checkbox" />Self-service
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="buttons">
+              <input type="submit" value="login" />
+              <input type="reset" value="reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
