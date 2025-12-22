@@ -1,0 +1,29 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3b3939;
+  padding-left: 5px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.all {
+  width: 650px;
+}
+.title {
+  color: #645f5f;
+  line-height: 3;
+}
+a {
+  color: blue;
+}
+.map {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.content {
+  margin-bottom: 20px;
+}
+.box {
+  border: 2px solid #645f5f;
+  padding: 20px;
+  border-radius: 10px;
+}
