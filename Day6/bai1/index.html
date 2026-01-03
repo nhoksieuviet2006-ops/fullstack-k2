@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form-content">
+      <div class="header">
+        <h1>Hey there</h1>
+        <p>
+          <span style="color: red">We'd like to hear from you</span>.Send us
+          your message or just say hi with our contact form or directly via
+          phone,we love to chat.
+        </p>
+      </div>
+      <div class="form-input">
+        <!-- name -->
+        <div class="item">
+          <div class="tooltip">Enter your name</div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-regular fa-user"></i></span>
+            <input type="text" placeholder="Your name" />
+            <span class="star">*</span>
+            <span class="close">x</span>
+          </div>
+        </div>
+
+        <!-- domain -->
+        <div class="item">
+          <div class="tooltip">Enter your email</div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+            <input type="email" placeholder="you@domain.com" />
+            <span class="star">*</span>
+            <span class="close">x</span>
+          </div>
+        </div>
+
+        <!-- phone number -->
+        <div class="item">
+          <div class="tooltip">Enter your phone number</div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-mobile-screen"></i></span>
+            <input type="text" placeholder="+44 00 123" />
+            <span class="star">*</span>
+            <span class="close">x</span>
+          </div>
+        </div>
+
+        <!-- Subject -->
+        <div class="item">
+          <div class="tooltip">Choose your subject</div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-book"></i></span>
+            <select>
+              <option value="" disabled selected>Subject</option>
+              <option>Support</option>
+              <option>Feedback</option>
+              <option>Idea</option>
+            </select>
+            <span class="arrow"
+              ><i class="fa-solid fa-sort required-icon"></i
+            ></span>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="item message">
+          <div class="tooltip">Write your opinion</div>
+          <div class="input-box">
+            <span class="icon"><i class="fa-regular fa-message"></i></span>
+            <textarea placeholder="Message"></textarea>
+            <span class="star">*</span>
+            <span class="close">x</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="end-form">
+          <input type="checkbox" checked />
+          <p>Send me a copy of this message</p>
+        </div>
+        <button class="btn">Send</button>
+      </div>
+    </form>
+  </body>
+</html>

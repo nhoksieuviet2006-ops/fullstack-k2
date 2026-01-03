@@ -1,0 +1,117 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.main-content {
+  background: #ebf5fe;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.item .sub-content {
+  display: flex;
+  align-items: center;
+}
+.item {
+  background-color: #fff;
+  padding: 20px 15px;
+  /* width: 300px; */
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item:hover {
+  border-color: red;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+}
+.sub-content .fa-solid {
+  width: 35px;
+  height: 35px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(to right, #ff5f6d, #ffc371); */
+  margin-right: 10px;
+}
+.sub-content .fa-solid.fa-paintbrush {
+  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+.item:hover .fa-paintbrush {
+  box-shadow: 0 2px 20px rgba(255, 95, 109, 0.55);
+}
+
+.sub-content .fa-solid.fa-newspaper {
+  background-image: linear-gradient(to right, #11998e, #38ef7d);
+}
+.item:hover .fa-newspaper {
+  box-shadow: 0 2px 14px rgba(56, 239, 125, 0.45);
+}
+
+.sub-content .fa-solid.fa-bolt {
+  background-image: linear-gradient(to right, #f7971e, #ffd200);
+}
+.item:hover .fa-bolt {
+  box-shadow: 0 2px 14px rgba(247, 151, 30, 0.45);
+}
+
+.sub-content .fa-solid.fa-rocket {
+  background-image: linear-gradient(to right, #667eea, #764ba2);
+}
+.item:hover .fa-rocket {
+  box-shadow: 0 2px 14px rgba(118, 75, 162, 0.45);
+}
+
+.sub-content .fa-solid.fa-layer-group {
+  background-image: linear-gradient(to right, #a18cd1, #fbc2eb);
+}
+.item:hover .fa-layer-group {
+  box-shadow: 0 2px 14px rgba(161, 140, 209, 0.45);
+}
+
+.sub-content .fa-solid.fa-envelope {
+  background-image: linear-gradient(to right, #84fab0, #8fd3f4);
+}
+.item:hover .fa-envelope {
+  box-shadow: 0 2px 14px rgba(132, 250, 176, 0.45);
+}
+.sub-content h3 {
+  font-size: 18px;
+}
+.item .desc {
+  margin-top: 0px;
+  color: #666;
+}
+.item a {
+  margin-top: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+.heading {
+  font-size: 21px;
+  font-weight: 700;
+}
+.desc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
