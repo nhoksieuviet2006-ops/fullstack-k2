@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+.menu {
+  background: transparent;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.menu-item {
+  position: relative;
+}
+.menu-item > a,
+.menu-item > i.fa-house {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 20px;
+  color: #666;
+  text-decoration: none;
+  border-right: 1px solid #dcdcdc;
+}
+.menu-item:first-child > i.fa-house {
+  border-right: 1px solid #dcdcdc;
+  padding: 0;
+  width: 48px;
+  justify-content: center;
+}
+.menu-item:last-child > a {
+  border-right: none;
+}
+.menu-item.special > a {
+  border-right: 1px solid #dcdcdc;
+}
+.menu-item.contact {
+  margin-left: auto;
+  border-left: 1px solid #dcdcdc;
+}
+.menu-item.contact > a {
+  border-right: none;
+}
+
+.menu-item:hover > a,
+.menu-item:hover > i.fa-house {
+  background: #2da5da;
+  color: #fff;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100%);
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  list-style: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 100;
+  padding: 8px 0;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.sub-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: #666;
+  text-decoration: none;
+}
+.sub-item:hover {
+  background: #f2f2f2;
+}
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* Đặt đúng vị trí ngay trên viền dropdown */
+  left: 30px; /* Điều chỉnh để mũi tên nằm giữa chữ "News" */
+  width: 0px;
+  height: 0px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #e0e0e0; /* Màu viền xám */
+}
+
+/* Mũi tên trỏ lên - lớp trong (trắng) */
+.dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: -7px; /* Lệch vào trong 1px so với lớp ngoài */
+  left: 30px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff; /* Màu trắng, che lên nền trắng của menu */
+}

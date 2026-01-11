@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg)
+    no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box {
+  position: relative;
+  width: 900px;
+  height: 450px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  cursor: pointer;
+}
+.arrow i {
+  color: #ff574d;
+  font-size: 14px;
+}
+.login-left {
+  width: 40%;
+  background-color: #ff574d;
+  color: #fff;
+  padding: 50px 30px;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.logo .jl {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #ff574d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 30px;
+}
+.login-left h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.login-left p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.btn {
+  margin-top: 25px;
+  background: #fff;
+  color: #ff574d;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+.social {
+  margin-top: 30px;
+}
+.social i {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.11);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-right {
+  width: 60%;
+  padding: 50px 40px;
+}
+.login-right h2 {
+  color: #272323;
+  margin-bottom: 30px;
+}
+.login-right h2 span {
+  color: #ff574d;
+}
+.login-right h2 .underline {
+  border-bottom: 2px solid #ff574d;
+  padding-bottom: 7px;
+}
+.login-right input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #717171;
+  margin-bottom: 15px;
+}
+.options input[type="checkbox"] {
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.options a {
+  color: #717171;
+  text-decoration: none;
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff574d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.register {
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #717171;
+  text-align: center;
+}
+.register a {
+  text-decoration: none;
+  color: #717171;
+}
