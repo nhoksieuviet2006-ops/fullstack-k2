@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fafafa;
+}
+.services {
+  padding: 60px 15px;
+}
+.container {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  position: relative;
+  width: calc(33.333% - 20px);
+  height: 240px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+.bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: 0.4s;
+}
+.base-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  /* top: 100px; */
+  transition: opacity 0.3s;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(150, 100, 80, 0.85);
+  color: #fff;
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 3;
+}
+.overlay h3,
+.overlay p,
+.overlay .btn {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.overlay h3 {
+  transition-delay: 0.1s;
+}
+
+.overlay p {
+  transition-delay: 0.2s;
+}
+
+.overlay .btn {
+  transition-delay: 0.3s;
+}
+
+.card:hover .bg-img {
+  opacity: 1;
+}
+.card:hover .base-content {
+  opacity: 0;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.card:hover .overlay h3,
+.card:hover .overlay p,
+.card:hover .overlay .btn {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+.icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn .arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ffffffa1;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.btn:hover .arrow {
+  background: #fff;
+  color: #000;
+}
