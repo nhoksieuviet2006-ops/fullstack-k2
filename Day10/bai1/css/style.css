@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  color: #fff;
+}
+.content h1 {
+  font-size: 50px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.content p {
+  position: absolute;
+  left: -50px;
+  color: #fcfbfbd1;
+  font-size: 20px;
+}
+.content p span {
+  font-size: 30px;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #05a9f4;
+  overflow: hidden;
+}
+.menu-btn {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  cursor: pointer;
+  z-index: 3;
+}
+.menu-btn i {
+  position: absolute;
+  bottom: 45px;
+  right: 45px;
+  font-size: 30px;
+  color: #05a9f4;
+  transition: transform 0.4s ease;
+}
+.menu-btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+.menu {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateX(-20px);
+  transition: 0.4s ease;
+  z-index: 2;
+  opacity: 0;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.25s ease;
+  width: 200px;
+  text-align: center;
+  color: #05a9f4;
+}
+.menu a:active {
+  background-color: #ccc;
+  color: black;
+}
+.page-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 10%;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  z-index: 10;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background: white;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+  z-index: 1;
+}
+#menu-toggle:checked ~ .container::before {
+  transform: scale(150);
+}
+#menu-toggle:checked ~ .container .menu-btn i::before {
+  content: "\f061";
+}
+#menu-toggle:checked ~ .container .menu {
+  opacity: 1;
+  transform: translateX(0);
+}
+#menu-toggle:checked ~ .container .menu-btn i {
+  transform: rotate(180deg);
+}
