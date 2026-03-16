@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập về nhà buổi 20</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; margin: 30px auto">
+      Bài tập về nhà buổi 20
+    </h1>
+    <div class="container">
+      <section id="ex01">
+        <h3>Tìm giao giữa 2 mảng</h3>
+        <label>Nhập mảng 1</label>
+        <input type="text" id="arrA" placeholder="3, 1, 2, 5, 6,...." />
+        <label>Nhập mảng 2</label>
+        <input type="text" id="arrB" placeholder="2, 1, 5, 3, 4,..." />
+        <button onclick="bai1()">Answer</button>
+        <div class="result" id="result1"></div>
+      </section>
+      <section id="ex02">
+        <label>Nhập mảng cần làm phẳng</label>
+        <input
+          type="text"
+          id="flattenArr"
+          placeholder="[1, [2, 3], 4, [[5, 6]]...]"
+        />
+        <button onclick="bai2()">Answer</button>
+        <div class="result" id="result2"></div>
+      </section>
+      <section id="ex03">
+        <label>Nhập mảng cần tách</label>
+        <input
+          type="text"
+          id="splitArr"
+          placeholder="[['a', 1, true], ['b', 2, false], ...]"
+        />
+        <button onclick="bai3()">Answer</button>
+        <div class="result" id="result3"></div>
+      </section>
+      <section id="ex04">
+        <div class="posts"></div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
